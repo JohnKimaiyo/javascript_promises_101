@@ -1,4 +1,4 @@
-//The following example defines a function getUsers() that returns a list of user objects:
+// to return a list of users
 function getUsers() {
     return [
         { username: "john", email: "john@test.com" },
@@ -7,7 +7,7 @@ function getUsers() {
 }
 
 
-//To find a user by username from the user list returned by the getUsers() function, you can use the findUser() function as follows:
+// to find specific user
 function findUser(username) {
     const users = getUsers();
     const user = users.find((user) => user, username === username);
