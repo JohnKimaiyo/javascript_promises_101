@@ -1,9 +1,17 @@
-// to retunr a a list of users
-function getUsers(){
-    console.log([
-        {username:"john",email:"john@gmail.com"},
-        {username:"jane",email:"jane@gmail.com"}
-    ])
+// to return a list of users
+function getUsers() {
+    return [
+        { username: "john", email: "john@test.com" },
+        { username: "jane", emai: "jane@gmail.com" }
+    ]
 }
 
-getUsers();
+
+//to find speciifc user
+function findUser(username) {
+    const users = getUsers();
+    const user = users.find((user) => user, username === username);
+    return user;
+}
+
+console.log(findUser('john'));
